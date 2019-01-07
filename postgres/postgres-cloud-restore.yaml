@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: postgres-snap-clone ## to be used in new app deployment
+  name: postgres-cloud-snap-clone ## to be used in new app deployment
   annotations:
     snapshot.alpha.kubernetes.io/snapshot: cloud-snapshot ## match to snapshot name
 spec:

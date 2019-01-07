@@ -39,10 +39,7 @@ spec:
         - name: PGUSER
           value: pgbench
         - name: POSTGRES_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: postgres-pass
-              key: password.txt
+          value: superpostgres
         - name: PGBENCH_PASSWORD
           value: superpostgres
         - name: PGDATA
