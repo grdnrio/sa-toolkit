@@ -17,7 +17,7 @@ spec:
       schedulerName: stork ## reference the stork scheduler here
       containers:
       - name: postgres
-        image: postgres
+        image: postgres:9.5
         imagePullPolicy: "IfNotPresent"
         ports:
         - containerPort: 5432
