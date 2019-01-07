@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: postgres-snap-clone ## to be used in new app deployment
   annotations:
-    snapshot.alpha.kubernetes.io/snapshot: postgres-snapshot ## match to snapshot name
+    snapshot.alpha.kubernetes.io/snapshot: cloud-snapshot ## match to snapshot name
 spec:
   accessModes:
      - ReadWriteOnce
