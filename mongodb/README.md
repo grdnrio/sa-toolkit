@@ -1,4 +1,4 @@
-Populate the Mongo DB with sample data:
+### MongoDB Data insert and validate
 
 ```
 db.spaceships.insertMany([
@@ -21,3 +21,13 @@ Find all documents and using nice formatting:
 
 Shows only the names of the ships:
 `db.spaceships.find({}, {name:true, _id:false})`
+
+### CLI Snapshot
+`pxctl volume snapshot create --name mongo-snap <ID>`
+
+### Drop database
+`db.spaceships.drop()`
+
+### Restore from snapshot using CLI
+`pxctl volume restore -s mongo-snap <ID>`
+
