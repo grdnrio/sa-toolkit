@@ -31,3 +31,5 @@ Shows only the names of the ships:
 ### Restore from snapshot using CLI
 `pxctl volume restore -s mongo-snap <ID>`
 
+### Cluster Migration
+`storkctl create migrations -c remotecluster-2 --includeResources --startApplications --namespaces default mongomigration`
